@@ -1,0 +1,32 @@
+name: Verify Build
+run-name: ${{ github.actor }} pushed new commits.
+on: [push, pull_request]
+jobs:
+  VerifyBuild:
+    name: Verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: go.mod
+      - name: Install Dependencies
+        run: |
+          go mod download
+      - name: Code Check
+        run: |
+          go vet -json ./... >vet_results.json
+      - name: Build
+        run: |
+          go build ./...
+      - name: Run Tests
+        run: |
+          go test -json ./... 2>&1 >test_results.json
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: build_results
+          path: "*_results.json"
+        if: always()
