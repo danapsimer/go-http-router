@@ -3,7 +3,7 @@ package responder
 import (
 	"bytes"
 	"encoding/json"
-	. "github.com/bluesoftdev/go-http-router/router"
+	. "github.com/danapsimer/go-http-router/router"
 	"io"
 	"net/http"
 )

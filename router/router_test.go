@@ -1,10 +1,10 @@
 package router_test
 
 import (
-	. "github.com/bluesoftdev/go-http-matchers/predicate"
-	. "github.com/bluesoftdev/go-http-router/responder"
-	. "github.com/bluesoftdev/go-http-router/router"
-	"github.com/bluesoftdev/go-http-router/util"
+	. "github.com/danapsimer/go-http-matchers/predicate"
+	. "github.com/danapsimer/go-http-router/responder"
+	. "github.com/danapsimer/go-http-router/router"
+	"github.com/danapsimer/go-http-router/util"
 
 	"github.com/stretchr/testify/assert"
 	"net/http/httptest"

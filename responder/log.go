@@ -1,7 +1,7 @@
 package responder
 
 import (
-	"github.com/bluesoftdev/go-http-router/router"
+	"github.com/danapsimer/go-http-router/router"
 	"log"
 	"net/http"
 	"net/http/httputil"

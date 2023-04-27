@@ -2,8 +2,8 @@ package responder_test
 
 import (
 	"bytes"
-	. "github.com/bluesoftdev/go-http-router/responder"
-	"github.com/bluesoftdev/go-http-router/router"
+	. "github.com/danapsimer/go-http-router/responder"
+	"github.com/danapsimer/go-http-router/router"
 	"github.com/stretchr/testify/assert"
 	"io"
 	"io/ioutil"

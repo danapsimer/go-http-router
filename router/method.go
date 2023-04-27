@@ -1,8 +1,8 @@
 package router
 
 import (
-	"github.com/bluesoftdev/go-http-matchers/extractor"
-	"github.com/bluesoftdev/go-http-matchers/predicate"
+	"github.com/danapsimer/go-http-matchers/extractor"
+	"github.com/danapsimer/go-http-matchers/predicate"
 )
 
 // Method is a DSL element that is used within an Endpoint element to define a method handler.
