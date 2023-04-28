@@ -3,7 +3,7 @@ module github.com/danapsimer/go-http-router
 go 1.20
 
 require (
-	github.com/danapsimer/go-http-matchers v0.0.6
+	github.com/danapsimer/go-http-matchers v0.0.7
 	github.com/stretchr/testify v1.8.2
 )
 
@@ -15,5 +15,3 @@ require (
 	gopkg.in/xmlpath.v2 v2.0.0-20150820204837-860cbeca3ebc // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/danapsimer/go-http-matchers => ../go-http-matchers
